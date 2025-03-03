@@ -44,7 +44,7 @@
 }
 
 .form__input::placeholder {
-  color: #55565a;
+  color: var(--color-grey);
 }
 
 /* .form__input:focus {
@@ -57,7 +57,7 @@
   display: block;
   font-size: 19px;
   line-height: 1.9;
-  color: #55565a;
+  color: var(--color-grey);
   padding-left: 40px;
 }
 
@@ -76,8 +76,8 @@
 
 .form__button {
   border: none;
-  background-color: #282829;
-  color: #fff;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 /* .form__button:focus {
