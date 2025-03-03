@@ -1,0 +1,24 @@
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact__content {
+  border: 1px solid #d5c9be;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #282829;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  overflow: hidden;
+}
+
+.contact__bg {
+  /* width: 100%;
+  height: 100%; */
+  background-image: url(../images/form-bg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+
+}
