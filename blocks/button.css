@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: inline-flex;
   text-transform: uppercase;
   background-color: #fff;
   color: #222222;
@@ -10,4 +10,6 @@
   font-weight: 700;
   letter-spacing: 0.04;
   text-decoration: none;
+  justify-content: center;
+  text-align: center;
 }

@@ -12,9 +12,6 @@
 }
 
 .footer__nav-list {
-  margin: 0;
-  list-style: none;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 60px;
@@ -52,9 +49,6 @@
 }
 
 .footer__icon-list {
-  margin: 0;
-  list-style: none;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 32px;
