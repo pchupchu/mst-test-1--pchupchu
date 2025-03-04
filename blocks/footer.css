@@ -27,7 +27,7 @@
   font-size: 20px;
   line-height: 1.5;
   font-style: italic;
-  letter-spacing: 0.04
+  letter-spacing: 0.04px;
 }
 
 .footer__nav-item::after {
