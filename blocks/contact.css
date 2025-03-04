@@ -9,13 +9,40 @@
   background-color: var(--color-white);
   color: var(--color-secondary);
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr;
   overflow: hidden;
 }
 
 .contact__bg {
+  display: none;
   background-image: url(../images/form-bg.png);
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 180%;
+  background-size: 300%;
+}
+
+@media screen and (min-width: 960px) {
+  .contact__content {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .contact__bg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__content {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .contact__bg {
+    background-size: 240%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact__bg {
+    background-size: 180%;
+  }
 }

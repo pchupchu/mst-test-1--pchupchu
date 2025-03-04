@@ -1,9 +1,12 @@
 .navigation {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease, visibility 0.3s;
 }
 
 .navigation_active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .navigation__list {
@@ -14,7 +17,6 @@
   flex-wrap: wrap;
   column-gap: 29px;
   row-gap: 15px;
-
 }
 
 .navigation__item {
@@ -44,8 +46,18 @@
   width: 100%;
 }
 
+.navigation__item:focus {
+  outline: none;
+  border: none;
+}
+
+.navigation__item:focus::after {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 }

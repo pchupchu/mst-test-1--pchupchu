@@ -1,15 +1,83 @@
 .button {
-  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  display: flex;
   text-transform: uppercase;
   background-color: var(--color-white);
   color: var(--color-primary);
   border-radius: 4px;
-  padding: 32px 50px;
+  padding: 16px 30px;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.04;
   text-decoration: none;
   justify-content: center;
   text-align: center;
+}
+
+.button:focus {
+  outline: 2px solid var(--color-grey);
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button:disabled {
+  background-color: var(--color-grey);
+  color: var(--color-pastel-grey);
+}
+
+.button__wrapper {
+  overflow: hidden;
+  max-height: 26px;
+}
+
+.button__text,
+.button__text-copy {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow-y: hidden;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0, -0.01, .25, 1);
+}
+
+.button__text {
+  transform-origin: right;
+}
+
+.button:hover .button__text {
+  transform: rotate(30deg) translateY(-24px);
+}
+
+.button:hover .button__text-copy {
+  transform: translateY(-26px) rotate(0deg);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 24px;
+    padding: 20px 36px;
+  }
+
+  .button__wrapper {
+    max-height: 32px;
+  }
+
+  .button:hover .button__text {
+    transform: rotate(30deg) translateY(-36px);
+  }
+
+  .button:hover .button__text-copy {
+    transform: translateY(-38px) rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    padding: 32px 50px;
+  }
 }

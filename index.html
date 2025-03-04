@@ -9,26 +9,28 @@
 </head>
 
 <body class="page">
-  <header class="container header">
-    <div class="header__logo-wrapper">
-      <div class="header__logo logo">KeyHouse</div>
-      <button class="header__menu" type="menu" aria-label="menu">
-        <div class="header__burger"></div>
-      </button>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo-wrapper">
+        <div class="header__logo logo">KeyHouse</div>
+        <button class="header__menu" type="menu" aria-label="menu">
+          <div class="header__burger"></div>
+        </button>
+      </div>
+      <nav class="header__nav navigation">
+        <ul class="navigation__list">
+          <li>
+            <a class="navigation__item" href="#">home</a>
+          </li>
+          <li>
+            <a class="navigation__item" href="#">about</a>
+          </li>
+          <li>
+            <a class="navigation__item" href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__nav navigation">
-      <ul class="navigation__list">
-        <li>
-          <a class="navigation__item" href="#">home</a>
-        </li>
-        <li>
-          <a class="navigation__item" href="#">about</a>
-        </li>
-        <li>
-          <a class="navigation__item" href="#">contact</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="content">
     <section class="hero" aria-label="hero">
@@ -39,10 +41,15 @@
         <ul class="list-reset hero__list">
           <li class="hero__list-item">Deposit<span class="hero__list-number"> $10 000 </span> refundable security
           </li>
-          <li class="hero__list-item"><span class="hero__list-number">20%</span> discount on long-term leases</li>
+          <li class="hero__list-item">Get a <span class="hero__list-number">20%</span>discount on long-term leases</li>
           <li class="hero__list-item">Interest <span class="hero__list-number">15%</span> annual mortgage rate</li>
         </ul>
-        <a class="hero__button button" href="#contact">rent now</a>
+        <a class="hero__button button" href="#contact">
+          <div class="button__wrapper">
+            <span class="button__text">rent now</span>
+            <span class="button__text-copy">rent now</span>
+          </div>
+        </a>
       </div>
       <div class="hero__image"></div>
     </section>
@@ -59,7 +66,12 @@
           <li class="about__list-item">Move in hassle-free with modern, fully equipped apartments, high-speed
             internet, and essential utilities included.</li>
         </ul>
-        <a class="about__button button" href="#contact">rent now</a>
+        <a class="about__button button" href="#contact">
+          <div class="button__wrapper">
+            <span class="button__text">rent now</span>
+            <span class="button__text-copy">rent now</span>
+          </div>
+        </a>
       </div>
       <img class="about__image" src="./images/image2.webp" alt="appartment for rent">
     </section>
@@ -79,14 +91,20 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset">
+              <input class="form__input-checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox"
+                value="checkbox" required />
               <label class="form__checkbox" for="checkbox">I accept Privacy policy</label>
-              <input class="visually-hidden" id="checkbox" name="checkbox" type="checkbox" required />
+
             </fieldset>
-            <button class="button form__button" type="submit">contact me</button>
+            <button class="button form__button" type="submit">
+              <div class="button__wrapper">
+                <span class="button__text">contact me</span>
+                <span class="button__text-copy">contact me</span>
+              </div>
+            </button>
           </div>
         </form>
         <div class="contact__bg"></div>
-
       </div>
     </section>
   </main>
@@ -109,8 +127,8 @@
         <div class="footer__logo logo">KeyHouse</div>
         <div class="footer__icons">
           <ul class="list-reset footer__icon-list">
-            <li class="footer__icon">
-              <a class="footer__icon-item" href="#">
+            <li>
+              <a class="footer__icon" href="#" aria-label="instagram">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1272)">
@@ -132,7 +150,7 @@
               </a>
             </li>
             <li>
-              <a class="footer__icon-item" href="#">
+              <a class="footer__icon" href="#" aria-label="tik-tok">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1273)">
@@ -149,7 +167,7 @@
               </a>
             </li>
             <li>
-              <a class="footer__icon-item" href="#">
+              <a class="footer__icon" href="#" aria-label="linkedin">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1274)">
@@ -174,7 +192,7 @@
                 </svg></a>
             </li>
             <li>
-              <a class="footer__icon-item" href="#">
+              <a class="footer__icon" href="#" aria-label="facebook">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1275)">
@@ -191,7 +209,7 @@
               </a>
             </li>
             <li>
-              <a class="footer__icon-item" href="#">
+              <a class="footer__icon" href="#" aria-label="telegram">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1276)">
@@ -208,7 +226,7 @@
               </a>
             </li>
             <li>
-              <a class="footer__icon-item" href="#">
+              <a class="footer__icon" href="#" aria-label="youtube">
                 <svg aria-hidden="true" focusable="false" class="footer__social-icon" xmlns="http://www.w3.org/2000/svg"
                   width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <g clip-path="url(#clip0_65_1277)">
@@ -228,10 +246,15 @@
             </li>
           </ul>
         </div>
-        <a class="footer__button button" href="#contact">rent now</a>
+        <a class="footer__button button" href="#contact">
+          <div class="button__wrapper">
+            <span class="button__text">rent now</span>
+            <span class="button__text-copy">rent now</span>
+          </div>
+        </a>
       </div>
       <div class="footer__content-row">
-        <p class="footer__copy footer__text">&copy; 2024, Pchupchu</p>
+        <p class="footer__copy footer__text">&copy; 2025, Pchupchu</p>
         <a class="footer__text footer__link" href="#">Privacy policy</a>
         <a class="footer__text footer__link" href="#">Terms of Use</a>
       </div>
