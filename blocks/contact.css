@@ -5,6 +5,7 @@
 
 .contact__content {
   border: 1px solid #d5c9be;
+  position: relative;
   border-radius: 30px;
   background-color: var(--color-white);
   color: var(--color-secondary);
@@ -19,6 +20,17 @@
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 300%;
+}
+
+.contact__image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  z-index: 10;
 }
 
 @media screen and (min-width: 960px) {
@@ -38,6 +50,10 @@
 
   .contact__bg {
     background-size: 240%;
+  }
+
+  .contact__image {
+    display: block;
   }
 }
 
